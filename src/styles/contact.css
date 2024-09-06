@@ -1,0 +1,63 @@
+.contact {
+  background-color: #ededed;
+  overflow: hidden; /* Hide overflowing content */
+  min-height: 100vh;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.details {
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.summary {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 17px;
+  background-color: white;
+  padding: 4px;
+}
+.deptcoord {
+  margin: 20px 20px;
+}
+.plusicon {
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.info {
+  font-size: 16px;
+  background-color: white;
+}
+
+@media (max-width: 700px) {
+  td,
+  th {
+    word-wrap: break-word;
+    max-width: 35px;
+    padding: 5px;
+  }
+}

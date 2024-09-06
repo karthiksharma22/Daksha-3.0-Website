@@ -1,0 +1,35 @@
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+.carousel {
+  width: 65%;
+  padding: 0px 0px;
+  margin: 0px auto;
+  /* margin-right: -0px; */
+  transition: all 0.3s;
+}
+
+.carousel .custom-slide {
+  height: 400px; /* Adjust the height as needed */
+  width: 250px; /* Adjust the width as needed */
+  transition: transform 0.5s; /* Add a transition effect for smoother size changes */
+}
+
+.carousel .slick-center .custom-slide.center-image {
+  transform: scale(1.2); /* Adjust the scale for the center image */
+  height: 450px;
+  width: 270px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+  .carousel {
+    width: 67%;
+  }
+
+  .carousel .slick-center .custom-slide.center-image {
+    transform: scale(1);
+    margin-right: 10px;
+  }
+}

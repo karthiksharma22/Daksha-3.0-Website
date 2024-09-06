@@ -1,0 +1,89 @@
+.titlespo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 300px;
+  width: 600px;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin: 0;
+}
+.titlemain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 200px;
+  overflow: hidden;
+}
+.daklogo {
+  height: 220px;
+  width: 220px;
+}
+.titlelogo {
+  height: auto;
+  width: 350px;
+  object-fit: contain;
+  margin: 47px 50px;
+  margin-left: 10px;
+}
+.titlediv {
+  border-left: 2px solid black;
+}
+.titlnam {
+  font-size: 20px;
+  text-align: center;
+  border-top: 2px solid black;
+  width: 90%;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  height: 100px;
+}
+.titlnam > h2 {
+  margin: 15px 0px;
+}
+.titlnam > p {
+  font-size: 20px;
+  margin: -10px 0;
+}
+
+.hrspo {
+  height: 90%;
+  border: 1px solid black;
+  margin-left: -20px;
+  margin-right: 20px;
+}
+
+@media (max-width: 700px) {
+  .titlespo {
+    height: 200px;
+    width: 100%;
+  }
+  .daklogo {
+    display: none;
+  }
+  .titlemain {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .titlenam {
+    height: 80px;
+  }
+
+  .titlelogo {
+    margin: 20px;
+    height: auto;
+    width: 90%;
+    margin-left: 13px;
+    object-fit: contain;
+    /* margin: 47px 50px; */
+  }
+  .titlnam > h2 {
+    font-size: 18px;
+    margin: 15px 0px;
+  }
+  .titlnam > p {
+    font-size: 15px;
+    margin: -10px 0;
+  }
+}

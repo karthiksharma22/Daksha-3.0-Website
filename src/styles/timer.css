@@ -1,0 +1,11 @@
+.timer {
+  color: white;
+  text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.664);
+}
+
+@media (max-width: 700px) {
+  .timer {
+    display: flex;
+    flex-direction: column;
+  }
+}

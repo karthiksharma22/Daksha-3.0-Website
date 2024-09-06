@@ -1,0 +1,51 @@
+.depts {
+  text-align: center;
+}
+.depts h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 50px 10px;
+}
+.deptsbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 80px 0px;
+  background-color: #ededed;
+  padding: 90px 0px;
+  margin-top: 0px;
+}
+
+.event {
+  display: flex;
+  gap: -40px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.poster {
+  height: 330px;
+  width: 300px;
+}
+
+.desc1 {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: -50px;
+  margin-left: -150px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+@media (max-width: 500px) {
+  .poster {
+    width: 280px;
+  }
+  .desc1 {
+    margin-left: -200px;
+  }
+}

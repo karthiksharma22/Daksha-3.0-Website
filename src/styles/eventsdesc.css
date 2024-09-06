@@ -1,0 +1,165 @@
+.bg {
+  position: absolute;
+  top: 0;
+  margin-top: 30px;
+  width: 100%;
+  height: 76vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.mainpage {
+  height: auto;
+}
+
+.container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 600px;
+  z-index: 1;
+  border-radius: 7px;
+  margin-top: calc(19%);
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 62%;
+  background: #f3f3f3;
+  color: rgb(0, 0, 0);
+  padding: 47px 50px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.p {
+  margin-top: -9px;
+}
+
+.container > h1 {
+  font-size: 50px;
+  margin-bottom: 35px;
+  /* text-align: center;
+  width: 100%; */
+  width: 100%;
+  margin: 50px auto;
+}
+
+hr {
+  width: 100%;
+}
+
+.sfcd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.container > h2 {
+  font-size: 30px;
+}
+
+.p2 {
+  text-align: center;
+}
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0em 1em;
+  border: rgb(250, 171, 0) solid 0.15em;
+  border-radius: 0.25em;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  left: 27vw;
+}
+
+.button p {
+  z-index: 1;
+}
+
+.button:hover {
+  color: #212121;
+}
+
+.button:active {
+  border-color: rgb(255, 179, 0);
+}
+
+.button::after,
+.button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: rgb(255, 179, 0);
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.button:hover:before {
+  transform: translateX(-1em);
+}
+
+.button:hover:after {
+  transform: translateX(1em);
+}
+
+.button:active:before,
+.button:active:after {
+  background: teal;
+}
+
+.container > p {
+  font-size: 18px;
+  font-weight: lighter;
+  text-align: left;
+}
+@media (max-width: 580px) {
+  .container {
+    margin-top: 200px;
+  }
+  .container > p {
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    /* word-wrap: break-word; */
+  }
+  .container > h1 {
+    font-size: 38px;
+    text-align: center;
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .container > h2 {
+    font-size: 25px;
+  }
+  ul {
+    margin-left: -40px;
+  }
+
+  .button {
+    margin-left: -30px;
+  }
+}

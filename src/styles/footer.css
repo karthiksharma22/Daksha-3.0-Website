@@ -1,0 +1,114 @@
+.contact-container p {
+  font-size: 14px;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  gap: 50px;
+  padding: 100px 0px;
+}
+
+.dimensions {
+  height: 310px;
+  width: 40vw;
+}
+
+.social-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -60px;
+  margin-left: -10px;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  font-size: 35px;
+  color: white;
+  gap: 20px;
+  margin-left: 0px;
+}
+.instagram {
+  cursor: pointer;
+  background: linear-gradient(
+    to top left,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d,
+    #f56040,
+    #f77737,
+    #fcaf45,
+    #ffdc80
+  );
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.twitter {
+  cursor: pointer;
+  background: #1da1f2;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube {
+  cursor: pointer;
+  background: #d32525;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkedin {
+  cursor: pointer;
+  background: #0a66c2;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: -20px;
+}
+
+.pic {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .dimensions {
+    width: 70vw;
+  }
+}
